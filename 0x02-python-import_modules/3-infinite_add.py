@@ -1,7 +1,10 @@
 #!/usr/bin/python3
+import sys
+
 if __name__ == "__main__":
-    import sys, math
-    result = 0
-    for i in sys.argv:
-        result += int(i)
-        print("{}".format(result))
+    total = 0
+
+    for arg in sys.argv[1:]:
+        total += int(arg)
+
+    print(total)
